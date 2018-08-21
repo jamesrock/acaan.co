@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  color: #000;
+	padding: 20px;
+	font-size: 20px;
+}
+
+select {
+	font-size: inherit;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+button {
+	font-size: inherit;
+	padding: 10px 30px;
+	border: 0;
+	background-color: indianred;
+	border-radius: 3px;
+	color: white;
+	cursor: pointer;
+}
+
+.page,
+#app {
+	margin: 0 auto;
+}
+
+.page {
+	max-width: 800px;
+}
+
+#app {
+	max-width: 200px;
+}
+
+.wrapper {
+	margin: 10px;
+}
+
+.card-display {
+	background-color: rgba(255,255,255,0.8);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	margin: 0;
+}
+
+.card-display[data-open="false"] {
+	display: none;
+}
+
+.card-display .card {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 200px;
+	height: 300px;
+	font-size: 30px;
+	padding: 5px;
+}
+
+.cards {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow-x: auto;
+}
+
+.cards-inner {
+	width: 1630px;
+}
+
+.cards-inner:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.card {
+	font-size: 22px;
+	font-weight: bold;
+	float: left;
+	border: solid 1px black;
+	width: 100px;
+	height: 150px;
+	text-align: left;
+	border-radius: 5px;
+	margin-left: -70px;
+	background-color: white;
+	padding: 5px 0;
+	box-sizing: border-box;
+}
+
+.card:hover {
+	background-color: yellow;
+}
+
+.card:first-child {
+	margin-left: 0;
+}
+
+.card.red {
+	color: red;
+}
+
+.card-value {
+	text-align: center;
+	width: 30px;
+	line-height: 1;
+}
