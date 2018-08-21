@@ -69,6 +69,15 @@ button {
 	padding: 5px;
 }
 
+.card-display .card .card-value {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 80px;
+	width: auto;
+}
+
 .cards {
 	position: fixed;
 	bottom: 0;
