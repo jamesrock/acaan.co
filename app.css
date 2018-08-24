@@ -14,6 +14,7 @@ body {
 select {
 	font-size: inherit;
 	width: 100%;
+	max-width: 200px;
 	box-sizing: border-box;
 }
 
@@ -34,10 +35,6 @@ button {
 
 .page {
 	max-width: 800px;
-}
-
-#app {
-	max-width: 200px;
 }
 
 .wrapper {
@@ -63,9 +60,9 @@ button {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 200px;
-	height: 300px;
-	font-size: 30px;
+	width: 250px;
+	height: 350px;
+	font-size: 150px;
 	padding: 5px;
 }
 
@@ -74,7 +71,6 @@ button {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 80px;
 	width: auto;
 }
 
@@ -102,7 +98,7 @@ button {
 	float: left;
 	border: solid 1px black;
 	width: 100px;
-	height: 150px;
+	height: 140px;
 	text-align: left;
 	border-radius: 5px;
 	margin-left: -70px;
@@ -127,4 +123,20 @@ button {
 	text-align: center;
 	width: 30px;
 	line-height: 1;
+}
+
+@media (min-width: 767px), (min-height: 1023px) {
+
+	body {
+		padding: 40px;
+		font-size: 30px;
+	}
+
+	/* iPad mini portrait */
+	.card-display .card {
+		width: 600px;
+		height: 840px;
+		font-size: 400px;
+	}
+
 }
