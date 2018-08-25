@@ -131,7 +131,7 @@ button {
 }
 
 .card-value-icon {
-	font-family: helvetica;
+	font-family: helvetica, sans-serif;
 }
 
 @media (min-width: 767px), (min-height: 1023px) {
