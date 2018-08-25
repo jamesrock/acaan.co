@@ -1,4 +1,4 @@
-@import '/icons.css';
+@import '/fonts.css';
 
 * {
   padding: 0;
@@ -6,11 +6,12 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: helvetica, sans-serif;
   text-align: center;
   color: #000;
 	padding: 20px;
 	font-size: 20px;
+	line-height: 1.1;
 }
 
 select {
@@ -74,6 +75,7 @@ button {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: auto;
+	line-height: 1;
 }
 
 .cards {
@@ -124,11 +126,12 @@ button {
 .card-value {
 	text-align: center;
 	width: 30px;
-	line-height: 1;
+	letter-spacing: -1px;
+	margin-left: -1px;
 }
 
 .card-value-icon {
-	font-family: icons;
+	font-family: helvetica;
 }
 
 @media (min-width: 767px), (min-height: 1023px) {

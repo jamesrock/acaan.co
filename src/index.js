@@ -303,10 +303,10 @@
 		'S'
 	],
 	suitIcons = {
-		'C': '&#xe918;',
-		'D': '&#xe919;',
-		'H': '&#xe9da;',
-		'S': '&#xe917;'
+		'C': '&clubs;',
+		'D': '&diams;',
+		'H': '&hearts;',
+		'S': '&spades;'
 	},
 	suitColours = {
 		'C': 'black',
