@@ -1,8 +1,18 @@
 (function() {
 
 	var
-	namespace = 'acaan.jamesrock.me',
-	savedGame = localStorage.getItem(namespace),
+	getNamespace = function() {
+
+		var
+		out = 'acaan.jamesrock.me';
+
+		if(location.search) {
+			out += location.search;
+		};
+
+		return out;
+
+	},
 	saveGame = function() {
 
 		var
@@ -231,6 +241,8 @@
 		cardDisplayWrapper.setAttribute('data-open', cardDisplayOpen);
 
 	},
+	namespace = getNamespace(),
+	savedGame = localStorage.getItem(namespace),
 	cardDisplayOpen = true,
 	test = window.test = function() {
 
@@ -424,6 +436,7 @@
 	// console.log('positions', positions);
 	// console.log('cardSelect', cardSelect);
 	// console.log('numberSelect', numberSelect);
+	console.log('namespace', namespace);
 
 	saveGame();
 	toggleCardDisplay();
