@@ -1,12 +1,16 @@
 (function() {
 
 	var
-	getNamespace = function() {
+	getNamespace = function(unique) {
 
 		var
 		out = 'acaan.jamesrock.me';
 
-		if(location.search) {
+		if(unique) {
+			out += ('?' + unique);
+		};
+
+		if(!unique&&location.search) {
 			out += location.search;
 		};
 
@@ -27,9 +31,15 @@
 	},
 	startNewGame = function() {
 
+		var
+		unique = ROCK.GUID.get();
+
+		namespace = getNamespace(unique);
+
 		cards = makeDeck();
 		saveGame();
-		window.location.reload();
+		window.location.search = unique;
+		// window.location.reload();
 
 	},
 	openSavedGame = function() {
