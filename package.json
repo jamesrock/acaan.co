@@ -4,8 +4,7 @@
   "description": "any card at any number",
   "private": true,
   "scripts": {
-    "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack"
   },
   "keywords": [
     "magic"
