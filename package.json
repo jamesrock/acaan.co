@@ -4,7 +4,7 @@
   "description": "any card at any number",
   "private": true,
   "scripts": {
-		"sass": "node-sass --watch scss/app.scss css/app.css --style=compressed",
+		"sass": "node-sass --watch sass/app.scss css/app.css --style=compressed",
     "webpack": "webpack --watch"
   },
   "keywords": [
